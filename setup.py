@@ -14,9 +14,9 @@ VERSION_RE = re.compile(r'''__version__ = ['"]([0-9.]+)['"]''')
 
 
 requires = [
-    'botocore>=1.10.26,<1.11.0',
+    'botocore-fork>=1.10.24,<1.11.0',
     'jmespath>=0.7.1,<1.0.0',
-    's3transfer>=0.1.10,<0.2.0'
+    's3transfer-fork>=0.1.10,<0.2.0'
 ]
 
 
@@ -26,7 +26,7 @@ def get_version():
 
 
 setup(
-    name='boto3',
+    name='boto3-fork',
     version=get_version(),
     description='The AWS SDK for Python',
     long_description=open('README.rst').read(),
